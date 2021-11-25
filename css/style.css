@@ -1,0 +1,113 @@
+
+:root {
+  --white: #ffffff;
+  --red: #ff7b4e;
+  --black: #0f1f1c;
+  --img-bor-radius: 35px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #1f5e37;
+}
+@keyframes animation1 {
+  0% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.logo__link {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+.list__item {
+  margin-right: 80px;
+}
+.nav__link {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  position: relative;
+}
+.nav__link:hover{
+  color: var(--white);
+}
+.nav__link:after {
+  display: none;
+  content: " ";
+  position: absolute;
+  width: 78%;
+  height: 4px;
+  background-color: #c4c4c4;
+  left: -2000px;
+  bottom: -5px;
+  border-radius: 100px;
+}
+.list__item:hover .nav__link:after {
+  display: block;
+  animation-name: animation1;
+  animation-duration: 1s;
+}
+.auth__btn{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    border: none;
+    background: none;
+    color: var(--white);
+}
+.auth__btn:hover{
+    width: 128px;
+    height: 49px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 100px;
+}
+.auth_but{
+    width: 227px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    border: none;
+    color: var(--white);
+    margin-top: 94px;
+    margin-bottom: 7px;
+}
+.text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 82px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+.word{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  color: var(--white);
+  margin-bottom: 68px;
+}
+.auth_button{
+  width: 263px;
+  height: 91px;
+  background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+  border-radius: 27px;
+  border: none;
+  color: var(--white);
+
+}
